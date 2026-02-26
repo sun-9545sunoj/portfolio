@@ -1,0 +1,96 @@
+// Background particles
+const bgAnimation = document.getElementById('bgAnimation');
+for (let i = 0; i < 50; i++) {
+    const particle = document.createElement('div');
+    particle.className = 'quantum-particle';
+    particle.style.left = Math.random() * 100 + '%';
+    particle.style.top = Math.random() * 100 + '%';
+    particle.style.animationDelay = Math.random() * 20 + 's';
+    particle.style.animationDuration = (15 + Math.random() * 10) + 's';
+    bgAnimation.appendChild(particle);
+}
+
+// Theme toggle
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('light');
+    themeToggle.textContent =
+        document.body.classList.contains('light') ? '☀️' : '🌙';
+});
+
+// Modal
+const modal = document.getElementById('contactModal');
+const contactBtn = document.getElementById('contactBtn');
+const closeModal = document.getElementById('closeModal');
+
+contactBtn.addEventListener('click', () => modal.classList.add('active'));
+closeModal.addEventListener('click', () => modal.classList.remove('active'));
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) modal.classList.remove('active');
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+// ================= MESSAGE FORM =================
+
+const pageForm = document.getElementById("pageMessageForm");
+const formStatus = document.getElementById("formStatus");
+
+function showStatus(message, type = "success") {
+    formStatus.textContent = message;
+    formStatus.className = `form-status show ${type}`;
+    formStatus.style.display = "block";
+
+    // hide after 3.5 seconds
+    setTimeout(() => {
+        formStatus.classList.remove("show");
+    }, 3500);
+
+    // fully remove
+    setTimeout(() => {
+        formStatus.style.display = "none";
+    }, 4200);
+}
+
+if (pageForm) {
+    pageForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const name = document.getElementById("msgName").value;
+        const email = document.getElementById("msgEmail").value;
+        const company = document.getElementById("msgCompany").value;
+        const message = document.getElementById("msgMessage").value;
+
+        try {
+            const response = await fetch("http://backend:8000/send-message", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    name,
+                    email,
+                    company,
+                    message
+                })
+            });
+
+            if (!response.ok) throw new Error("Failed");
+
+            showStatus("✅ Message sent successfully!", "success");
+            pageForm.reset();
+
+        } catch (error) {
+            showStatus("❌ Failed to send message. Try again.", "error");
+        }
+    });
+}

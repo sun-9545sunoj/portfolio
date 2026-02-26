@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunoj Ragiri | Quantum ML Researcher</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- ================= BACKGROUND ================= -->
+<div class="bg-animation" id="bgAnimation"></div>
+
+<!-- ================= NAV ================= -->
+<nav>
+    <div class="nav-container">
+        <div class="logo">SR</div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<div class="container">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <div class="status-badge">
+            <span class="pulse-dot"></span>
+            Open to Research & Internships
+        </div>
+
+        <h1>Sunoj Ragiri</h1>
+
+        <p class="role">
+            AI/ML & MLOps Engineer<br>
+            <strong>Research Assistant @ IIIT Kottayam</strong>
+        </p>
+
+        <p class="hero-description">
+            Pioneering research in Quantum Machine Learning and hybrid quantum-classical systems.
+            Building scalable ML pipelines and exploring quantum cryptography for real-world AI deployment.
+        </p>
+
+        <!-- DOWNLOAD CV -->
+        <div class="cta-buttons">
+
+            <div class="cv-dropdown">
+                <button class="btn btn-primary">
+                    📄 Download CV
+                </button>
+
+                <div class="cv-dropdown-menu">
+                    <a href="../assets/cv/Sunoj_Ragiri_CV.pdf" target="_blank">
+                        📄 Download PDF
+                    </a>
+                    <a href="../assets/cv/Sunoj_Ragiri_CV.docx" target="_blank">
+                        📝 Download DOC
+                    </a>
+                </div>
+            </div>
+
+            <button class="btn btn-secondary" id="contactBtn">
+                📬 Get in Touch
+            </button>
+
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="quantum-card">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">4+</div>
+                    <div class="stat-label">Research Projects</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Models Trained</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">6+</div>
+                    <div class="stat-label">ML Pipelines</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">GCP</div>
+                    <div class="stat-label">Cloud Platform</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Tech Stack -->
+        <section class="section" id="about">
+            <div class="section-header">
+                <span class="section-icon">⚡</span>
+                <h2 class="section-title">Tech Stack</h2>
+            </div>
+            <div class="bento-grid">
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">💻</span>
+                        <h3 class="card-title">Programming</h3>
+                    </div>
+                    <div class="tech-pills">
+                        <span class="pill">Python</span>
+                        <span class="pill">C / C++</span>
+                        <span class="pill">SQL</span>
+                        <span class="pill">Bash</span>
+                        <span class="pill">Git</span>
+                    </div>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">🧠</span>
+                        <h3 class="card-title">ML / DL</h3>
+                    </div>
+                    <div class="tech-pills">
+                        <span class="pill">PyTorch</span>
+                        <span class="pill">TensorFlow</span>
+                        <span class="pill">Transformers</span>
+                        <span class="pill">CNNs</span>
+                        <span class="pill">LSTM</span>
+                    </div>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">⚛️</span>
+                        <h3 class="card-title">Quantum Computing</h3>
+                    </div>
+                    <div class="tech-pills">
+                        <span class="pill">Qiskit</span>
+                        <span class="pill">PennyLane</span>
+                        <span class="pill">QML</span>
+                        <span class="pill">Quantum Circuits</span>
+                    </div>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">🚀</span>
+                        <h3 class="card-title">MLOps & Cloud</h3>
+                    </div>
+                    <div class="tech-pills">
+                        <span class="pill">MLflow</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Kubernetes</span>
+                        <span class="pill">GCP</span>
+                        <span class="pill">CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="section-header">
+                <span class="section-icon">🔬</span>
+                <h2 class="section-title">Research Projects</h2>
+            </div>
+
+            <div class="project-card fade-in">
+                <h3 class="project-title">Quantum-Driven Hybrid Deep Learning (QLSTM-FOREX)</h3>
+                <p class="card-content">
+                    Developing a cutting-edge hybrid quantum-classical model integrating LSTM, Variational Quantum Circuits (VQC), 
+                    and QSVM for Forex price prediction. Implementing end-to-end data processing, model training, and evaluation 
+                    using PyTorch and PennyLane in a modular workflow architecture.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">QML</span>
+                    <span class="tag">PennyLane</span>
+                    <span class="tag">LSTM</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <h3 class="project-title">Fake News Detection using Transformers</h3>
+                <p class="card-content">
+                    Engineered and fine-tuned multiple transformer architectures (XLM-RoBERTa, RoBERTa, DeBERTa, ALBERT) 
+                    for fake news detection. Implemented ensemble learning techniques to improve model robustness, 
+                    achieving ~82% accuracy on benchmark datasets.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Transformers</span>
+                    <span class="tag">XLM-RoBERTa</span>
+                    <span class="tag">DeBERTa</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">Ensemble Learning</span>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <h3 class="project-title">Quantum Cryptography Simulation (BB84 Protocol)</h3>
+                <p class="card-content">
+                    Exploring quantum key distribution using the BB84 protocol with Qiskit. 
+                    Integrating cloud platforms and AI workflows for practical quantum communication applications.
+                </p>
+                <div class="project-tags">
+                    <span class="tag">Qiskit</span>
+                    <span class="tag">Quantum Cryptography</span>
+                    <span class="tag">BB84</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section class="section" id="experience">
+            <div class="section-header">
+                <span class="section-icon">💼</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+
+            <div class="bento-grid">
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">🎓</span>
+                        <h3 class="card-title">Research Assistant</h3>
+                    </div>
+                    <p class="card-content" style="margin-bottom: 0.8rem;">
+                        <strong>IIIT Kottayam</strong> • Aug 2023 – Present
+                    </p>
+                    <p class="card-content">
+                        Conducting AI research under CS Department HOD mentorship, focusing on scalable ML systems 
+                        and real-time analytics. Designing deep learning models and preparing research documentation 
+                        for academic publication.
+                    </p>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">⚙️</span>
+                        <h3 class="card-title">ML Engineering Intern</h3>
+                    </div>
+                    <p class="card-content" style="margin-bottom: 0.8rem;">
+                        <strong>Independent Projects</strong> • Jan 2024 – Present
+                    </p>
+                    <p class="card-content">
+                        Designed end-to-end ML pipelines with automated training, validation, and deployment. 
+                        Implemented CI/CD workflows on cloud platforms for scalable model deployment and monitoring.
+                    </p>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">🎓</span>
+                        <h3 class="card-title">Education</h3>
+                    </div>
+                    <p class="card-content" style="margin-bottom: 0.8rem;">
+                        <strong>B.Tech in Computer Science</strong><br>
+                        IIIT Kottayam • 2023 – 2027
+                    </p>
+                    <p class="card-content">
+                        • Andrew Ng's ML Specialization (Stanford)<br>
+                        • MIT Deep Learning (6.S191)<br>
+                        • Qiskit Global Summer School
+                    </p>
+                </div>
+
+                <div class="bento-card fade-in">
+                    <div class="card-header">
+                        <span class="card-icon">📍</span>
+                        <h3 class="card-title">Location</h3>
+                    </div>
+                    <p class="card-content">
+                        <strong>Kadiri, Andhra Pradesh</strong><br>
+                        India 🇮🇳
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<!-- ================= LEAVE MESSAGE ================= -->
+<!-- ================= LEAVE MESSAGE ================= -->
+<section class="section" id="message">
+    <div class="section-header">
+        <span class="section-icon">✉️</span>
+        <h2 class="section-title">Leave a Message</h2>
+    </div>
+    
+    <div class="bento-card fade-in" style="max-width:600px;margin:auto;">
+
+        <!-- Status message -->
+        <div
+            id="formStatus"
+            style="
+                display:none;
+                margin-bottom:15px;
+                padding:12px;
+                border-radius:10px;
+                text-align:center;
+                font-weight:600;
+            "
+        ></div>
+
+        <form class="message-form" id="pageMessageForm">
+
+            <div class="form-group">
+                <label for="msgName">Your Name</label>
+                <input
+                    type="text"
+                    class="form-input"
+                    id="msgName"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="msgEmail">Your Email</label>
+                <input
+                    type="email"
+                    class="form-input"
+                    id="msgEmail"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="msgCompany">Company / Organization</label>
+                <input
+                    type="text"
+                    class="form-input"
+                    id="msgCompany"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="msgMessage">Your Message</label>
+                <textarea
+                    class="form-textarea"
+                    id="msgMessage"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Send Message
+            </button>
+
+        </form>
+    </div>
+    <div id="formStatus" class="form-status"></div>
+</section>
+
+
+<!-- ================= CONTACT MODAL ================= -->
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <h2 class="modal-title">Let's Connect</h2>
+
+        <a href="mailto:nagasunoj979@gmail.com" class="contact-link">✉️ Email</a>
+        <a href="tel:+919391524412" class="contact-link">📞 Phone</a>
+        <a href="https://github.com/sunoj-9545" target="_blank" class="contact-link">💻 GitHub</a>
+        <a href="https://linkedin.com/in/sunoj-ragiri" target="_blank" class="contact-link">💼 LinkedIn</a>
+
+        <button class="btn btn-secondary close-modal" id="closeModal">Close</button>
+    </div>
+</div>
+
+<!-- ================= CHATBOT ================= -->
+<div class="chatbot-widget">
+    <button class="chat-button" id="chatToggle">🤖</button>
+
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <h3>AI Assistant</h3>
+            <button class="chat-close" id="chatCloseBtn">✕</button>
+        </div>
+
+        <div class="chat-content active" id="chatTab">
+            <div class="chat-messages" id="chatMessages">
+                <div class="message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-bubble">
+                        Ask me about Sunoj’s research, projects, experience, or skills.
+                    </div>
+                </div>
+            </div>
+
+            <div class="message typing-indicator" id="typingIndicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input id="chatInput" placeholder="Ask me anything..." />
+            <button id="sendBtn">→</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= JS ================= -->
+<script src="../js/main.js"></script>
+<script src="../js/chatbot.js"></script>
+<script src="../js/analytics.js"></script>
+<script src="../js/message.js"></script>
+
+</body>
+</html>
