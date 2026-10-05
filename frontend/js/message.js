@@ -2,15 +2,16 @@ document.getElementById("pageMessageForm").addEventListener("submit", async (e) 
     e.preventDefault();
 
     const status = document.getElementById("formStatus");
+    const form = e.target;
+
+    // TODO: Replace with your actual Formspree endpoint URL
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; 
 
     const data = {
         name: document.getElementById("msgName").value,
         email: document.getElementById("msgEmail").value,
-        message:
-            "Company: " +
-            document.getElementById("msgCompany").value +
-            "\n\n" +
-            document.getElementById("msgMessage").value
+        company: document.getElementById("msgCompany").value,
+        message: document.getElementById("msgMessage").value
     };
 
     status.style.display = "block";
@@ -18,10 +19,18 @@ document.getElementById("pageMessageForm").addEventListener("submit", async (e) 
     status.style.color = "#000";
     status.innerText = "⏳ Sending message...";
 
+    if (FORMSPREE_ENDPOINT.includes("YOUR_FORM_ID")) {
+        status.style.background = "#fffbeb";
+        status.style.color = "#b45309";
+        status.innerHTML = `⚠️ Formspree endpoint not configured. <br>Please replace <code>YOUR_FORM_ID</code> in <code>js/message.js</code>.`;
+        return;
+    }
+
     try {
-        const res = await fetch("http://localhost:8000/send-message", {
+        const res = await fetch(FORMSPREE_ENDPOINT, {
             method: "POST",
             headers: {
+                "Accept": "application/json",
                 "Content-Type": "application/json"
             },
             body: JSON.stringify(data)
@@ -31,7 +40,7 @@ document.getElementById("pageMessageForm").addEventListener("submit", async (e) 
             status.style.background = "#dcfce7";
             status.style.color = "#166534";
             status.innerText = "✅ Message sent successfully!";
-            e.target.reset();
+            form.reset();
         } else {
             throw new Error("Server error");
         }

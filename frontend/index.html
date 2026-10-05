@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunoj Ragiri | Quantum ML Researcher</title>
+    <title>Sunoj Ragiri | AI/ML Engineer & Quant Researcher</title>
+
+    <meta name="description" content="Sunoj Ragiri is an AI/ML Engineer with strong interests in Quantitative Finance, Deep Learning, and MLOps.">
+    <meta property="og:title" content="Sunoj Ragiri | AI/ML Engineer & Quant Researcher">
+    <meta property="og:description" content="AI/ML Engineer building intelligent systems at the intersection of Deep Learning, Quantitative Finance, and MLOps.">
+    <meta property="og:type" content="website">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -25,8 +30,11 @@
         <div class="logo">SR</div>
         <div class="nav-links">
             <a href="#about">About</a>
+            <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
+            <a href="#interests">Interests</a>
             <a href="#experience">Experience</a>
+            <a href="#opensource">Open Source</a>
             <button class="theme-toggle" id="themeToggle">🌙</button>
         </div>
     </div>
@@ -40,43 +48,29 @@
     <div class="hero-content">
         <div class="status-badge">
             <span class="pulse-dot"></span>
-            Open to Research & Internships
+            Open to Research & Quant Engineering Roles
         </div>
 
         <h1>Sunoj Ragiri</h1>
 
         <p class="role">
-            AI/ML & MLOps Engineer<br>
-            <strong>Research Assistant @ IIIT Kottayam</strong>
+            AI/ML Engineer<br>
+            <strong>Quantitative Finance • Deep Learning • MLOps</strong>
         </p>
 
         <p class="hero-description">
-            Pioneering research in Quantum Machine Learning and hybrid quantum-classical systems.
-            Building scalable ML pipelines and exploring quantum cryptography for real-world AI deployment.
+            Building intelligent systems at the intersection of Deep Learning, Quantitative Finance, and MLOps. 
+            Focused on market microstructure, high-frequency limit order book forecasting, and scalable data infrastructure.
         </p>
 
         <!-- DOWNLOAD CV -->
         <div class="cta-buttons">
-
-            <div class="cv-dropdown">
-                <button class="btn btn-primary">
-                    📄 Download CV
-                </button>
-
-                <div class="cv-dropdown-menu">
-                    <a href="../assets/cv/Sunoj_Ragiri_CV.pdf" target="_blank">
-                        📄 Download PDF
-                    </a>
-                    <a href="../assets/cv/Sunoj_Ragiri_CV.docx" target="_blank">
-                        📝 Download DOC
-                    </a>
-                </div>
-            </div>
-
+            <a href="assets/cv/Sunoj_iiitk_Nasdaq.pdf" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+                📄 View Resume
+            </a>
             <button class="btn btn-secondary" id="contactBtn">
-                📬 Get in Touch
+                📬 Contact
             </button>
-
         </div>
     </div>
 
@@ -84,212 +78,315 @@
         <div class="quantum-card">
             <div class="stats-grid">
                 <div class="stat-item">
-                    <div class="stat-number">4+</div>
-                    <div class="stat-label">Research Projects</div>
+                    <div class="stat-number">1.5M+</div>
+                    <div class="stat-label">Ticks Processed</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Models Trained</div>
+                    <div class="stat-number">LOB</div>
+                    <div class="stat-label">Modeling</div>
                 </div>
                 <div class="stat-item">
-                    <div class="stat-number">6+</div>
-                    <div class="stat-label">ML Pipelines</div>
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Major OSS PRs</div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-number">GCP</div>
-                    <div class="stat-label">Cloud Platform</div>
+                    <div class="stat-label">Cloud Native</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-        <!-- Tech Stack -->
-        <section class="section" id="about">
-            <div class="section-header">
-                <span class="section-icon">⚡</span>
-                <h2 class="section-title">Tech Stack</h2>
+<!-- About Me -->
+<section class="section" id="about">
+    <div class="section-header">
+        <span class="section-icon">👋</span>
+        <h2 class="section-title">About Me</h2>
+    </div>
+    <div class="bento-card fade-in">
+        <p class="card-content" style="font-size: 1.1rem; line-height: 1.7; margin-bottom: 1rem;">
+            I am an AI / ML Engineer with strong interests in Quantitative Finance, Deep Learning, and MLOps. Currently an undergraduate at IIIT Kottayam, my technical work is driven by the challenge of modeling complex time-series environments and building scalable infrastructures to deploy these models in production.
+        </p>
+        <p class="card-content" style="font-size: 1.1rem; line-height: 1.7;">
+            Whether it's engineering a high-throughput sliding-window pipeline for limit order books, evaluating out-of-sample regime shifts, or optimizing GPU memory indexing in Google's QuantumLib, I thrive on solving hard engineering problems at the intersection of data, modeling, and system performance. I am actively exploring opportunities in quantitative research, algorithmic trading, and ML engineering.
+        </p>
+    </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="section" id="skills">
+    <div class="section-header">
+        <span class="section-icon">⚡</span>
+        <h2 class="section-title">Technical Skills</h2>
+    </div>
+    <div class="bento-grid">
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">💻</span>
+                <h3 class="card-title">Programming & Scripting</h3>
             </div>
-            <div class="bento-grid">
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">💻</span>
-                        <h3 class="card-title">Programming</h3>
-                    </div>
-                    <div class="tech-pills">
-                        <span class="pill">Python</span>
-                        <span class="pill">C / C++</span>
-                        <span class="pill">SQL</span>
-                        <span class="pill">Bash</span>
-                        <span class="pill">Git</span>
-                    </div>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">🧠</span>
-                        <h3 class="card-title">ML / DL</h3>
-                    </div>
-                    <div class="tech-pills">
-                        <span class="pill">PyTorch</span>
-                        <span class="pill">TensorFlow</span>
-                        <span class="pill">Transformers</span>
-                        <span class="pill">CNNs</span>
-                        <span class="pill">LSTM</span>
-                    </div>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">⚛️</span>
-                        <h3 class="card-title">Quantum Computing</h3>
-                    </div>
-                    <div class="tech-pills">
-                        <span class="pill">Qiskit</span>
-                        <span class="pill">PennyLane</span>
-                        <span class="pill">QML</span>
-                        <span class="pill">Quantum Circuits</span>
-                    </div>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">🚀</span>
-                        <h3 class="card-title">MLOps & Cloud</h3>
-                    </div>
-                    <div class="tech-pills">
-                        <span class="pill">MLflow</span>
-                        <span class="pill">Docker</span>
-                        <span class="pill">Kubernetes</span>
-                        <span class="pill">GCP</span>
-                        <span class="pill">CI/CD</span>
-                    </div>
-                </div>
+            <div class="tech-pills">
+                <span class="pill">Python</span>
+                <span class="pill">C++</span>
+                <span class="pill">SQL</span>
+                <span class="pill">R</span>
+                <span class="pill">Bash</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Projects -->
-        <section class="section" id="projects">
-            <div class="section-header">
-                <span class="section-icon">🔬</span>
-                <h2 class="section-title">Research Projects</h2>
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">📈</span>
+                <h3 class="card-title">Quant & Systems</h3>
             </div>
-
-            <div class="project-card fade-in">
-                <h3 class="project-title">Quantum-Driven Hybrid Deep Learning (QLSTM-FOREX)</h3>
-                <p class="card-content">
-                    Developing a cutting-edge hybrid quantum-classical model integrating LSTM, Variational Quantum Circuits (VQC), 
-                    and QSVM for Forex price prediction. Implementing end-to-end data processing, model training, and evaluation 
-                    using PyTorch and PennyLane in a modular workflow architecture.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Python</span>
-                    <span class="tag">PyTorch</span>
-                    <span class="tag">QML</span>
-                    <span class="tag">PennyLane</span>
-                    <span class="tag">LSTM</span>
-                </div>
+            <div class="tech-pills">
+                <span class="pill">Limit Order Book Modeling</span>
+                <span class="pill">Market Microstructure</span>
+                <span class="pill">Backtesting</span>
+                <span class="pill">GPU Computing (CUDA/HIP)</span>
             </div>
+        </div>
 
-            <div class="project-card fade-in">
-                <h3 class="project-title">Fake News Detection using Transformers</h3>
-                <p class="card-content">
-                    Engineered and fine-tuned multiple transformer architectures (XLM-RoBERTa, RoBERTa, DeBERTa, ALBERT) 
-                    for fake news detection. Implemented ensemble learning techniques to improve model robustness, 
-                    achieving ~82% accuracy on benchmark datasets.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Transformers</span>
-                    <span class="tag">XLM-RoBERTa</span>
-                    <span class="tag">DeBERTa</span>
-                    <span class="tag">NLP</span>
-                    <span class="tag">Ensemble Learning</span>
-                </div>
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">🧠</span>
+                <h3 class="card-title">Machine Learning & AI</h3>
             </div>
-
-            <div class="project-card fade-in">
-                <h3 class="project-title">Quantum Cryptography Simulation (BB84 Protocol)</h3>
-                <p class="card-content">
-                    Exploring quantum key distribution using the BB84 protocol with Qiskit. 
-                    Integrating cloud platforms and AI workflows for practical quantum communication applications.
-                </p>
-                <div class="project-tags">
-                    <span class="tag">Qiskit</span>
-                    <span class="tag">Quantum Cryptography</span>
-                    <span class="tag">BB84</span>
-                    <span class="tag">Security</span>
-                </div>
+            <div class="tech-pills">
+                <span class="pill">PyTorch</span>
+                <span class="pill">Scikit-learn</span>
+                <span class="pill">XGBoost</span>
+                <span class="pill">LightGBM</span>
+                <span class="pill">Transformers</span>
+                <span class="pill">Time-Series Modeling</span>
             </div>
-        </section>
+        </div>
 
-        <!-- Experience -->
-        <section class="section" id="experience">
-            <div class="section-header">
-                <span class="section-icon">💼</span>
-                <h2 class="section-title">Experience</h2>
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">🚀</span>
+                <h3 class="card-title">Infrastructure & MLOps</h3>
             </div>
-
-            <div class="bento-grid">
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">🎓</span>
-                        <h3 class="card-title">Research Assistant</h3>
-                    </div>
-                    <p class="card-content" style="margin-bottom: 0.8rem;">
-                        <strong>IIIT Kottayam</strong> • Aug 2023 – Present
-                    </p>
-                    <p class="card-content">
-                        Conducting AI research under CS Department HOD mentorship, focusing on scalable ML systems 
-                        and real-time analytics. Designing deep learning models and preparing research documentation 
-                        for academic publication.
-                    </p>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">⚙️</span>
-                        <h3 class="card-title">ML Engineering Intern</h3>
-                    </div>
-                    <p class="card-content" style="margin-bottom: 0.8rem;">
-                        <strong>Independent Projects</strong> • Jan 2024 – Present
-                    </p>
-                    <p class="card-content">
-                        Designed end-to-end ML pipelines with automated training, validation, and deployment. 
-                        Implemented CI/CD workflows on cloud platforms for scalable model deployment and monitoring.
-                    </p>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">🎓</span>
-                        <h3 class="card-title">Education</h3>
-                    </div>
-                    <p class="card-content" style="margin-bottom: 0.8rem;">
-                        <strong>B.Tech in Computer Science</strong><br>
-                        IIIT Kottayam • 2023 – 2027
-                    </p>
-                    <p class="card-content">
-                        • Andrew Ng's ML Specialization (Stanford)<br>
-                        • MIT Deep Learning (6.S191)<br>
-                        • Qiskit Global Summer School
-                    </p>
-                </div>
-
-                <div class="bento-card fade-in">
-                    <div class="card-header">
-                        <span class="card-icon">📍</span>
-                        <h3 class="card-title">Location</h3>
-                    </div>
-                    <p class="card-content">
-                        <strong>Kadiri, Andhra Pradesh</strong><br>
-                        India 🇮🇳
-                    </p>
-                </div>
+            <div class="tech-pills">
+                <span class="pill">Docker</span>
+                <span class="pill">Kubernetes</span>
+                <span class="pill">FastAPI</span>
+                <span class="pill">CI/CD</span>
+                <span class="pill">GCP</span>
+                <span class="pill">Prometheus</span>
+                <span class="pill">Grafana</span>
+                <span class="pill">Git</span>
+                <span class="pill">Linux</span>
             </div>
-        </section>
+        </div>
+
+        <div class="bento-card fade-in" style="grid-column: 1 / -1;">
+            <div class="card-header">
+                <span class="card-icon">📊</span>
+                <h3 class="card-title">Data & Processing</h3>
+            </div>
+            <div class="tech-pills">
+                <span class="pill">NumPy</span>
+                <span class="pill">Pandas</span>
+                <span class="pill">Feature Engineering</span>
+                <span class="pill">Data Validation Pipelines</span>
+                <span class="pill">Power BI</span>
+                <span class="pill">Matplotlib</span>
+                <span class="pill">Seaborn</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="section" id="projects">
+    <div class="section-header">
+        <span class="section-icon">🔬</span>
+        <h2 class="section-title">Projects</h2>
     </div>
 
-<!-- ================= LEAVE MESSAGE ================= -->
+    <div class="project-card fade-in">
+        <h3 class="project-title">High-Frequency LOB Prediction & Execution Backtesting Framework</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.9rem;">Quantitative Market Microstructure & Deep Learning</p>
+        <p class="card-content">
+            <strong>Microstructure Feature Pipeline:</strong> Engineered a high-throughput sliding-window engine in PyTorch Lightning processing 1.5M+ ticks across 5 equities, deriving 61 market microstructure signals (Order Flow Imbalance, bid-ask spread dynamics, depth ratios).<br><br>
+            <strong>Predictive Deep Learning Models:</strong> Implemented and evaluated DeepLOB, 1D-ResNet+Transformer, and spatial-temporal attention networks to forecast sub-second price moves from 10-level Limit Order Book (LOB) snapshots.<br><br>
+            <strong>Market Simulation & Robustness:</strong> Designed a domain-specific augmentation pipeline (Price Noise, Volume Scaling, Level Dropout) alongside focal loss to tackle heavy class imbalance and order book sparseness.<br><br>
+            <strong>Covariate Shift Diagnostics:</strong> Evaluated predictive alpha against out-of-sample regime shifts and distribution gaps across varying volatility environments, achieving an out-of-sample validation F1 score of ~0.76.
+        </p>
+        <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">PyTorch Lightning</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+        </div>
+    </div>
+
+    <div class="project-card fade-in">
+        <h3 class="project-title">Financial Risk Analysis & Surveillance Pipeline</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.9rem;">Financial Risk Analytics & Production ML</p>
+        <p class="card-content">
+            <strong>End-to-End Ingestion & Validation:</strong> Built a modular Python pipeline automating batch ingestion, strict schema validation, IQR outlier handling, and automated feature transformation for credit and counterparty risk evaluation.<br><br>
+            <strong>Risk Indexing & Metric Engineering:</strong> Developed a weighted Financial Health Score and multi-variable exposure KPIs using Debt-to-Income, Asset Coverage, and leverage ratios.<br><br>
+            <strong>Benchmarked Predictive Models:</strong> Trained and evaluated Random Forest, XGBoost, and LightGBM models with SMOTE balancing on 30K+ transactional records, optimizing for precision-recall tradeoffs under asymmetric risk costs.<br><br>
+            <strong>Surveillance & BI Reporting:</strong> Integrated interactive dashboarding for portfolio risk tiering, exposure concentration, ROC evaluation, and feature attribution.
+        </p>
+        <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">LightGBM</span>
+            <span class="tag">Power BI</span>
+        </div>
+    </div>
+</section>
+
+<!-- Quant / Research Interests -->
+<section class="section" id="interests">
+    <div class="section-header">
+        <span class="section-icon">🔭</span>
+        <h2 class="section-title">Quantitative Finance & Research Interests</h2>
+    </div>
+    <div class="bento-grid">
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">📈</span>
+                <h3 class="card-title">Quantitative Finance</h3>
+            </div>
+            <ul style="list-style: none; padding-left: 0; color: var(--text-secondary); line-height: 2;">
+                <li>• Financial Machine Learning</li>
+                <li>• Market Microstructure</li>
+                <li>• Limit Order Books</li>
+                <li>• High-Frequency Trading Concepts</li>
+                <li>• Risk Modeling</li>
+                <li>• Algorithmic Trading Systems</li>
+            </ul>
+        </div>
+        
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">🧠</span>
+                <h3 class="card-title">Research Areas Explored</h3>
+            </div>
+            <ul style="list-style: none; padding-left: 0; color: var(--text-secondary); line-height: 2;">
+                <li>• Deep Learning for Financial Markets</li>
+                <li>• Transformer architectures for time-series</li>
+                <li>• AI-driven trading systems</li>
+                <li>• High-performance compute scaling (GPU)</li>
+                <li>• Distributed System robust processing</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Open Source -->
+<section class="section" id="opensource">
+    <div class="section-header">
+        <span class="section-icon">🌐</span>
+        <h2 class="section-title">Open Source Contributions</h2>
+    </div>
+
+    <div class="project-card fade-in">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <h3 class="project-title">QuantumLib/qsim (Google Quantum AI)</h3>
+            <span style="color: var(--text-secondary); font-size: 0.9rem;">Jan 2026 – May 2026</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.9rem;">GPU Systems Contributor 
+            <a href="#" style="color: var(--accent); text-decoration: none;">[PR #1016]</a>
+        </p>
+        <p class="card-content">
+            • Resolved GPU scaling bottlenecks, scaling state-vector simulator capacity beyond 34 qubits via 64-bit memory indexing and 3D grid folding.<br>
+            • Unified hardware-compliant grid logic in core C++/CUDA headers for cross-platform portability across NVIDIA and AMD (ROCm/HIP).<br>
+            • Refactored compute kernels to eliminate integer overflows during massive address resolution; optimized kernel dispatch alignment.
+        </p>
+    </div>
+
+    <div class="project-card fade-in">
+        <div style="display: flex; justify-content: space-between; align-items: baseline;">
+            <h3 class="project-title">Apache SeaTunnel (ASF)</h3>
+            <span style="color: var(--text-secondary); font-size: 0.9rem;">Sep 2026 – Present</span>
+        </div>
+        <p style="color: var(--text-secondary); margin-bottom: 1rem; font-size: 0.9rem;">Distributed Systems Contributor 
+            <a href="#" style="color: var(--accent); text-decoration: none;">[PR #10270]</a>
+        </p>
+        <p class="card-content">
+            • Resolved distributed data-skew and checkpoint Exception timeout defects in the MySQL CDC connector during snapshot processing.<br>
+            • Re-engineered chunk-splitting logic using dynamic sampling and distribution metrics to handle sparse primary keys, eliminate reader stalls.<br>
+            • Implemented boundary-correctness and regression test suites using JUnit and Debezium mocks across multi-round ASF code reviews.
+        </p>
+    </div>
+</section>
+
+<!-- Experience -->
+<section class="section" id="experience">
+    <div class="section-header">
+        <span class="section-icon">🎓</span>
+        <h2 class="section-title">Education & Certifications</h2>
+    </div>
+
+    <div class="bento-grid">
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">🏫</span>
+                <h3 class="card-title">Education</h3>
+            </div>
+            <p class="card-content" style="margin-bottom: 0.8rem;">
+                <strong>Indian Institute of Information Technology, Kottayam</strong><br>
+                B.Tech in Computer Science and Engineering • Expected 2027<br>
+                <em>Kerala, India</em>
+            </p>
+            <p class="card-content" style="font-size: 0.95rem;">
+                <strong>Relevant Coursework:</strong> Probability & Statistics, Linear Algebra, Data Structures & Algorithms, Optimization Techniques.
+            </p>
+        </div>
+
+        <div class="bento-card fade-in">
+            <div class="card-header">
+                <span class="card-icon">🏆</span>
+                <h3 class="card-title">Achievements & Certifications</h3>
+            </div>
+            <p class="card-content">
+                • <strong>Google Student Ambassador 2026</strong><br>
+                • Contributed merged PRs to Google's QuantumLib (qsim) open-source repository<br>
+                • <strong>WorldQuant University:</strong> Data Science Lab Certificate<br>
+                • <strong>Google Cloud Skills Boost:</strong> Vertex AI & Generative AI
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- GitHub Activity -->
+<section class="section" id="github-activity">
+    <div class="section-header">
+        <span class="section-icon">💻</span>
+        <h2 class="section-title">GitHub Activity</h2>
+    </div>
+
+    <div class="bento-grid">
+        <div class="bento-card fade-in" style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <h3 class="card-title" style="margin-bottom: 1rem;">@sun-9545sunoj</h3>
+            <div id="githubStatsContainer" style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 1rem; color: var(--text-secondary);">
+                <div class="stat-item">
+                    <div class="stat-number" id="ghRepos" style="font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">--</div>
+                    <div class="stat-label">Public Repos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="ghFollowers" style="font-size: 1.5rem; font-weight: bold; color: var(--text-primary);">--</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+            </div>
+            <a href="https://github.com/sun-9545sunoj" target="_blank" class="btn btn-primary" style="text-decoration: none;">
+                View GitHub Profile
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-secondary);">
+                * Stats updated dynamically via GitHub Actions
+            </p>
+        </div>
+    </div>
+</section>
+
 <!-- ================= LEAVE MESSAGE ================= -->
 <section class="section" id="message">
     <div class="section-header">
@@ -298,80 +395,38 @@
     </div>
     
     <div class="bento-card fade-in" style="max-width:600px;margin:auto;">
-
-        <!-- Status message -->
-        <div
-            id="formStatus"
-            style="
-                display:none;
-                margin-bottom:15px;
-                padding:12px;
-                border-radius:10px;
-                text-align:center;
-                font-weight:600;
-            "
-        ></div>
+        <div id="formStatus" style="display:none; margin-bottom:15px; padding:12px; border-radius:10px; text-align:center; font-weight:600;"></div>
 
         <form class="message-form" id="pageMessageForm">
-
             <div class="form-group">
                 <label for="msgName">Your Name</label>
-                <input
-                    type="text"
-                    class="form-input"
-                    id="msgName"
-                    required
-                >
+                <input type="text" class="form-input" id="msgName" required>
             </div>
-
             <div class="form-group">
                 <label for="msgEmail">Your Email</label>
-                <input
-                    type="email"
-                    class="form-input"
-                    id="msgEmail"
-                    required
-                >
+                <input type="email" class="form-input" id="msgEmail" required>
             </div>
-
             <div class="form-group">
                 <label for="msgCompany">Company / Organization</label>
-                <input
-                    type="text"
-                    class="form-input"
-                    id="msgCompany"
-                >
+                <input type="text" class="form-input" id="msgCompany">
             </div>
-
             <div class="form-group">
                 <label for="msgMessage">Your Message</label>
-                <textarea
-                    class="form-textarea"
-                    id="msgMessage"
-                    required
-                ></textarea>
+                <textarea class="form-textarea" id="msgMessage" required></textarea>
             </div>
-
-            <button type="submit" class="btn btn-primary">
-                Send Message
-            </button>
-
+            <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </div>
-    <div id="formStatus" class="form-status"></div>
 </section>
-
 
 <!-- ================= CONTACT MODAL ================= -->
 <div class="modal" id="contactModal">
     <div class="modal-content">
         <h2 class="modal-title">Let's Connect</h2>
-
-        <a href="mailto:nagasunoj979@gmail.com" class="contact-link">✉️ Email</a>
+        <a href="mailto:nagasunoj777@gmail.com" class="contact-link">✉️ Email</a>
         <a href="tel:+919391524412" class="contact-link">📞 Phone</a>
-        <a href="https://github.com/sunoj-9545" target="_blank" class="contact-link">💻 GitHub</a>
-        <a href="https://linkedin.com/in/sunoj-ragiri" target="_blank" class="contact-link">💼 LinkedIn</a>
-
+        <a href="https://github.com/sun-9545sunoj" target="_blank" class="contact-link">💻 GitHub</a>
+        <a href="https://linkedin.com/in/sunoj-ragiri97/" target="_blank" class="contact-link">💼 LinkedIn</a>
         <button class="btn btn-secondary close-modal" id="closeModal">Close</button>
     </div>
 </div>
@@ -391,7 +446,7 @@
                 <div class="message">
                     <div class="message-avatar">🤖</div>
                     <div class="message-bubble">
-                        Ask me about Sunoj’s research, projects, experience, or skills.
+                        Ask me about Sunoj’s quant research, projects, experience, or skills.
                     </div>
                 </div>
             </div>
@@ -411,10 +466,10 @@
 </div>
 
 <!-- ================= JS ================= -->
-<script src="../js/main.js"></script>
-<script src="../js/chatbot.js"></script>
-<script src="../js/analytics.js"></script>
-<script src="../js/message.js"></script>
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/analytics.js"></script>
+<script src="js/message.js"></script>
 
 </body>
 </html>

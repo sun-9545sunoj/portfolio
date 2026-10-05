@@ -2,11 +2,10 @@ FROM nginx:alpine
 
 RUN rm -rf /usr/share/nginx/html/*
 
-COPY public /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
+COPY public /usr/share/nginx/html/public
 COPY css /usr/share/nginx/html/css
 COPY js /usr/share/nginx/html/js
 COPY assets /usr/share/nginx/html/assets
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# We should probably serve resumes if the link points to ../resumes
+# But if it's served by nginx, the path ../resumes won't work unless it's in the image.
