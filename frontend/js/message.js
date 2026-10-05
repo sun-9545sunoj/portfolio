@@ -4,8 +4,8 @@ document.getElementById("pageMessageForm").addEventListener("submit", async (e) 
     const status = document.getElementById("formStatus");
     const form = e.target;
 
-    // TODO: Replace with your actual Formspree endpoint URL
-    const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; 
+    // Formspree endpoint URL
+    const FORMSPREE_ENDPOINT = "https://formspree.io/f/xkjonlaz"; 
 
     const data = {
         name: document.getElementById("msgName").value,
