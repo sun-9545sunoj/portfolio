@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const knowledgeBase = {
         "research": "Sunoj focuses on Quantitative Finance, Deep Learning, and MLOps, with strong interests in Limit Order Book forecasting and high-frequency trading.",
         "quant": "Sunoj explores Financial Machine Learning, Market Microstructure, and Algorithmic Trading Systems.",
-        "projects": "Major projects include a High-Frequency LOB Prediction framework and a Financial Risk Analysis & Surveillance Pipeline.",
-        "tech": "Tech stack includes Python, C++, PyTorch, Scikit-learn, XGBoost, Docker, Kubernetes, GCP, and CUDA/HIP.",
+        "projects": "Projects include High-Frequency LOB Prediction, Financial Risk Analysis Pipeline, End-to-End MLOps & Cloud Infrastructure Platform, and Autonomous Risk Evaluation & Stabilization System.",
+        "tech": "Tech stack includes Python, C++, PyTorch, Scikit-learn, XGBoost, Docker, Kubernetes, Terraform, Prometheus, Grafana, Seldon Core, FastAPI, GCP, and CUDA/HIP.",
         "open source": "Sunoj has contributed to Google's QuantumLib/qsim for GPU systems and Apache SeaTunnel for distributed data pipelines.",
         "experience": "Sunoj is pursuing B.Tech in CSE at IIIT Kottayam (Expected 2027) and is a Google Student Ambassador 2026."
     };
